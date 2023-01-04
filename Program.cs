@@ -28,6 +28,11 @@ namespace ShoppingCartConsole
             items = new Dictionary<string, int>();
         }
 
+        public Dictionary<string, int> GetItems()
+        {
+            return items;
+        }
+
         public void AddItem(string item, int quantity)
         {
             if (items.ContainsKey(item))
